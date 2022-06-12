@@ -41,7 +41,7 @@ public class PedraPapelTesoura {
 		int compareMoves2 = userMove.compareMoves(cpuMove);
 		int compareMoves3 = cpuMove.compareMoves(user2Move);
 
-//        compara os movimentos para saber quem foi o vencedor
+//  compara os movimentos para saber quem foi o vencedor
 
 		switch (compareMoves) {
 		case 0: // Empate
@@ -92,7 +92,7 @@ public class PedraPapelTesoura {
 
 		jogadas++;
 
-		// Pergunta ao usuário se ele deseja jogar novamente
+// Pergunta ao usuário se ele deseja jogar novamente.
 		if (user.playAgain()) {
 			System.out.println();
 			startGame();
@@ -101,18 +101,14 @@ public class PedraPapelTesoura {
 		}
 	}
 
-	/**
-	 * Mostra as estatísticas do jogo. Considera os empates como 1/2 de uma vitória
-	 * para definir a porcentagem de vitórias.
-	 */
-
+// mostra o resultado dos jogos e a quantidade de vitórias de cada jogador.
 	private void printGameStats() {
 		int jogador1 = jogador1Pontos;
 		int jogador2 = jogador2Pontos;
 		int CPU = CPUPontos;
 		int empate = jogadas - jogador1Pontos - jogador2Pontos;
 
-		// Imprimir valores
+// Imprimir valores
 		System.out.printf(" Vitórias Jogador 1: " + jogador1Pontos);
 		System.out.printf("\n Vitórias Jogador 2: " + jogador2Pontos);
 		System.out.println("\n Vitórias CPU : " + CPUPontos);

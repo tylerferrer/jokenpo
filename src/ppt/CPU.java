@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class CPU {
 
+//	lógica para a escolha do CPU.
 	public Move getMove() {
 
 		Move[] escolha = Move.values();

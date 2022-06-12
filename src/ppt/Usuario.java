@@ -11,7 +11,7 @@ public class Usuario {
 
 	public Move getMove() {
 
-		// Apresentar o menu ao usuário
+// Apresentar o menu ao usuário
 		System.out.println("---------------------------------------------------------------------------");
 		System.out.println();
 		System.out.println("Vamos jogar...");
@@ -28,7 +28,7 @@ public class Usuario {
 		System.out.println("Opções para escolher:\n1.Pedra\n2.Papel\n3.Tesoura");
 		System.out.println("----------------------------------------------------------------------------");
 
-		// Obtendo a entrada
+// Obtendo a entrada
 
 		String userInput = inputScanner.nextLine();
 		userInput = userInput.toUpperCase();
@@ -36,7 +36,7 @@ public class Usuario {
 		char segundaLetra = userInput.charAt(1);
 
 		if (primeiraLetra == 'P' && (segundaLetra == 'E' || segundaLetra == 'A') || primeiraLetra == 'T') {
-			// valida a entrada digitada pelo usuário
+// valida a entrada digitada pelo usuário
 
 			switch (primeiraLetra) {
 			case 'P':

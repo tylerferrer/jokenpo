@@ -5,13 +5,12 @@ public enum Move {
 	PEDRA, PAPEL, TESOURA;
 
 	public int compareMoves(Move otherMove) {
-		// Tie
 		if (this == otherMove)
 			return 0;
 
 		switch (this) {
 
-		// lógica para validar os movimentos
+// lógica para validar os movimentos
 		case PEDRA:
 			return (otherMove == TESOURA ? 1 : (otherMove == PAPEL ? -1 : 1));
 		case PAPEL:

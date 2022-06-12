@@ -12,42 +12,42 @@ class Jogador {
 		vitorias = 0;
 	}
 
-	// Get no nome do jogador.
+// Get no nome do jogador.
 	public String getNome() {
 		return nome;
 	}
 
-	// Get na escolha do jogador.
+// Get na escolha do jogador.
 	public String getEscolha() {
 		return escolha;
 	}
 
-	// Get vitorias.
+// Get vitórias.
 	public int getVitorias() {
 		return vitorias;
 	}
 
-	// Set nome do jogador.
+// Set nome do jogador.
 	public void setNome(String n) {
 		nome = n.toLowerCase();
 	}
 
-	// Set escolha do jogador.
+// Set escolha do jogador.
 	public void setEscolha(String c) {
 		escolha = c.toLowerCase();
 	}
 
-	// Set vitorias.
+// Set vitórias.
 	public void setVitorias(int rw) {
 		vitorias = rw;
 	}
 
-	// Increment vitorias.
+// Adiciona vitórias.
 	public void adicionaVitorias() {
 		vitorias++;
 	}
 
-	// Get userInput from console.
+// Get para a entrada do usuário
 	public String getEscolhaJogador(Scanner in, String msg) {
 		System.out.print(msg);
 		try {
